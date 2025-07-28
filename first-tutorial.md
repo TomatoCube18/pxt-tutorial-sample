@@ -4,6 +4,21 @@
 
 First create a character to star in your game!
 
+
+
+## {Using the workspace}
+
+Your [__*workspace*__](#workIt "The area where you build code")
+is the area where you'll connect code blocks to build your program.
+
+---
+
+- :mouse pointer:  Click inside the ``||game(noclick):splash " "||`` block that's already in the workspace
+and **change the sentence** to something more exciting.
+
+~hint What's a workspace? 🕵🏽
+
+
 ## Step One
 
 Use the ``||custom:make random background||`` block to add a background color.
