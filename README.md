@@ -5,7 +5,102 @@ This repository is an example of how to host a MakeCode tutorial on Github. This
 * Open [https://arcade.makecode.com/](https://arcade.makecode.com/) (or makecode.microbit.org, minecraft.makecode.com)
 * Click on **New Project**
 * Give the project a descriptive name
-* Click on the **Github Icon** on the bottom toolbar next to the project name and sign in if prompted
+* Click on the **Github Icon** # Create a Character
+
+## Introduction @unplugged
+
+First create a character to star in your game!
+
+
+
+## {Using the workspace}
+
+Your [__*workspace*__](#workIt "The area where you build code")
+is the area where you'll connect code blocks to build your program.
+
+---
+
+- :mouse pointer:  Click inside the ``||game(noclick):splash " "||`` block that's already in the workspace
+and **change the sentence** to something more exciting.
+
+~hint What's a workspace? 🕵🏽
+
+
+## Step One
+
+**Set the background color**
+
+---
+
+- :tree: Open the <br/>
+``||scene:Scene||``<br/>
+toolbox drawer and drag <br/>
+``||scene:set background color [ ]||`` <br/>
+into **the empty** ``||loops(noclick):on start||`` container already in your workspace. 
+
+~hint What does that mean? 🤷🏽
+
+Use the ``||custom:make random background||`` block to add a background color.
+
+```blocks
+// @highlight
+custom.makeRandomBackground()
+```
+
+## Step Two
+
+Create a sprite with the ``||variables:set mySprite to||`` block.
+
+```blocks
+custom.makeRandomBackground()
+// @highlight
+let mySprite = sprites.create(img`
+    . . . . . . . . . . b 5 b . . .
+    . . . . . . . . . b 5 b . . . .
+    . . . . . . . . . b c . . . . .
+    . . . . . . b b b b b b . . . .
+    . . . . . b b 5 5 5 5 5 b . . .
+    . . . . b b 5 d 1 f 5 5 d f . .
+    . . . . b 5 5 1 f f 5 d 4 c . .
+    . . . . b 5 5 d f b d d 4 4 . .
+    b d d d b b d 5 5 5 4 4 4 4 4 b
+    b b d 5 5 5 b 5 5 4 4 4 4 4 b .
+    b d c 5 5 5 5 d 5 5 5 5 5 b . .
+    c d d c d 5 5 b 5 5 5 5 5 5 b .
+    c b d d c c b 5 5 5 5 5 5 5 b .
+    . c d d d d d d 5 5 5 5 5 d b .
+    . . c b d d d d d 5 5 5 b b . .
+    . . . c c c c c c c c b b . . .
+`, SpriteKind.Player)
+```
+
+## Step Three
+
+Add movement with the ``||controller:move mySprite with buttons||`` block.
+
+```blocks
+custom.makeRandomBackground()
+let mySprite = sprites.create(img`
+    . . . . . . . . . . b 5 b . . .
+    . . . . . . . . . b 5 b . . . .
+    . . . . . . . . . b c . . . . .
+    . . . . . . b b b b b b . . . .
+    . . . . . b b 5 5 5 5 5 b . . .
+    . . . . b b 5 d 1 f 5 5 d f . .
+    . . . . b 5 5 1 f f 5 d 4 c . .
+    . . . . b 5 5 d f b d d 4 4 . .
+    b d d d b b d 5 5 5 4 4 4 4 4 b
+    b b d 5 5 5 b 5 5 4 4 4 4 4 b .
+    b d c 5 5 5 5 d 5 5 5 5 5 b . .
+    c d d c d 5 5 b 5 5 5 5 5 5 b .
+    c b d d c c b 5 5 5 5 5 5 5 b .
+    . c d d d d d d 5 5 5 5 5 d b .
+    . . c b d d d d d 5 5 5 b b . .
+    . . . c c c c c c c c b b . . .
+`, SpriteKind.Player)
+// @highlight
+controller.moveSprite(mySprite)
+```on the bottom toolbar next to the project name and sign in if prompted
 * Click **Go ahead**
 
 This will make an empty MakeCode repository in your Github account.
