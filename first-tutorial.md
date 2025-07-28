@@ -21,6 +21,18 @@ and **change the sentence** to something more exciting.
 
 ## Step One
 
+**Set the background color**
+
+---
+
+- :tree: Open the <br/>
+``||scene:Scene||``<br/>
+toolbox drawer and drag <br/>
+``||scene:set background color [ ]||`` <br/>
+into **the empty** ``||loops(noclick):on start||`` container already in your workspace. 
+
+~hint What does that mean? 🤷🏽
+
 Use the ``||custom:make random background||`` block to add a background color.
 
 ```blocks
